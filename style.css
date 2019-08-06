@@ -1,0 +1,325 @@
+* {
+	font-family: Lato, sans-serif;
+}
+
+body {
+	background-color: #eee;
+	width: 99.6%;
+}
+
+#header-img {
+	width: 100%;
+	max-width: 300px;
+	height: 100%;
+	margin-right: 15px;
+}
+
+header {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: fixed;
+	top: 0px;
+	flex-wrap: wrap;
+	min-height: 75px;
+	z-index: 1000;
+	background-color: #eee;
+}
+
+#nav-bar ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+a.nav-link {
+	text-decoration: none;
+	color: black;
+}
+
+#nav-bar {
+	width: 35vw;
+	float: right;
+	margin-left: 15px;
+}
+
+#form-div {
+	width: 100%;
+	text-align: center;
+}
+
+#form-title {
+	font-size: 24px;
+	margin-top: 100px;
+}
+
+#form input[type="email"] {
+	border: 2px solid black;
+	margin-bottom: 8px;
+	width: 13.5vw;
+	height: 2.5vh;
+	text-indent: 5px;
+	animation-name: animation2out;
+	animation-duration: 600ms;
+}
+
+#form input[type="email"]:hover {
+	animation-name: animation2;
+	animation-duration: 700ms;
+	animation-fill-mode: forwards;
+	cursor: pointer;
+}
+
+#form input[type="submit"] {
+	font-weight: 900;
+	font-size: 1em;
+	background-color: #f1c40f;
+	border: none;
+	padding: 7px 25px 7px 25px;
+	text-indent: 8px;
+	cursor: pointer;
+	animation-name: animation1out;
+	animation-duration: 600ms;
+}
+
+#form input[type="submit"]:hover {
+	animation-name: animation1;
+	animation-duration: 600ms;
+	animation-fill-mode: forwards;
+}
+
+@keyframes animation1 {
+	100% {
+		text-indent: 1px;
+		background-color: orange;
+	}
+}
+
+@keyframes animation1out {
+	from {
+		text-indent: 1px;
+		background-color: orange;
+	}
+	to {
+		text-indent: 8px;
+		background-color: #f1c40f;
+	}
+}
+
+@keyframes animation2 {
+	100% {
+		border-color: #f1c40f;
+		border-radius: 5px;
+		width: 15vw;
+		height: 3vh;
+	}
+}
+
+@keyframes animation2out {
+	from {
+		border-color: #f1c40f;
+		border-radius: 5px;
+		width: 15vw;
+		height: 3vh;
+	}
+	to {
+		border-color: black;
+		border-radius: 0px;
+		width: 13.5vw;
+		height: 2.5vh;
+	}
+}
+
+@media screen and (max-width: 650px) {
+
+
+	#nav-bar ul {
+		flex-direction: column;
+		margin-top: 20px;
+		text-align: center;
+		align-items: center;
+	}
+
+	#nav-bar li {
+		padding-bottom: 5px;
+	}
+
+	header {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	header-img {
+		position: relative;
+		margin-top: 15px;
+	}
+
+	#form-title {
+		margin-top: 155px;
+	}
+}
+
+i {
+	color: darkorange;
+	width: 7vw;
+}
+
+#features {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	width: 50%;
+	left: 27%;
+	margin-top: 100px;
+}
+
+#about {
+	display: inline-flex;
+}
+
+#features h3,p {
+	margin: 0;
+	padding: 0;
+}
+
+#features h3 {
+	font-size: 24px;
+}
+
+#quality {
+	display: inline-flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-bottom: 80px;
+}
+
+#fastship {
+	display: inline-flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-bottom: 50px;
+}
+
+#premmat {
+	display: inline-flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-bottom: 50px;
+}
+
+#video {
+	position: absolute;
+	background-position: center;
+	width: 30vw;
+	height: auto*1.9;
+	display: block;
+	left: 35%;
+	right: 35%;
+	margin-bottom: 50px;
+}
+
+div.top {
+	background-color: #DDDDDD;
+	width: 100%;
+	text-align: center;
+}
+
+div.bottom {
+	width: 100%;
+	text-align: center;
+}
+
+.desc p {
+	margin: 10px 0;
+	padding: 0;
+}
+
+.select input {
+	margin-top: 20px;
+	margin-bottom: 15px;
+	padding: 10px 20px;
+	background-color: #f1c40f;
+	border: none;
+	font-family: Arial;
+	font-size: 16px;
+}
+
+.select input:hover {
+	background-color: orange;
+	cursor: pointer;
+}
+
+.top p {
+	font-size: 16px;
+	font-weight: bold;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+#howitworks {
+	margin-bottom: 385px;
+}
+
+#pricing {
+	display: flex;
+	width: 50%;
+	margin: 0 auto;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+
+#tenor {
+	border: 1px solid black;
+	width: 31.5%;
+}
+
+#bass {
+	border: 1px solid black;
+	width: 31.5%;
+}
+
+#valve {
+	border: 1px solid black;
+	width: 31.5%;
+}
+
+footer {
+	display: flex;
+	width: 50%;
+	margin: 0 auto;
+	background-color: #DDDDDD;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20px;
+}
+
+#links ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	width: 25%;
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+
+#links {
+	width: 100%;
+}
+
+#links ul li a {
+	text-decoration: none;
+	color: black;
+	margin: 0;
+	padding: 0;
+}
+
+#copyright p {
+	float: right;
+	margin: 0 0 3px 0;
+	padding: 0;
+	font-size: 14.4px;
+	color: #444444;
+}
+
